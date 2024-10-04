@@ -1,0 +1,40 @@
+
+    /* Gradient overlay on top of the image */
+    .gradient-overlay::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -5;
+        background: linear-gradient(180deg, rgba(14, 14, 14, 0.556), rgb(3, 7, 93)); /* Darker gradient at the bottom */
+    }
+
+    /* Ensure full image is visible */
+    .full-image {
+        object-fit: cover;
+    }
+    .custom-hover:hover {
+        color: red; /* Change button text color to red on hover */
+    }
+
+    .custom-hover:hover a {
+        color: rgb(34, 30, 30); /* Ensure the anchor text inside the button also changes to red */
+    }
+
+/* --------------------------------------------------------------------------------------------------------------------
+MARQUEE CSS CODE
+-------------------------------------------------------------------------------------------------------------------- */
+.scrolling-news {
+    overflow: hidden;
+    display: block;
+    animation: scroll-up 25s linear infinite;
+  }
+
+  .scrolling-news:hover {
+    animation-play-state: paused;
+    text-decoration: underline;
+  }
+
+
+
+
+
