@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+:root { 
+    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+    --default-color: #faf6f6; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #3498db; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  }
+    
+    
     /* Gradient overlay on top of the image */
     .gradient-overlay::before {
         content: '';
@@ -35,6 +46,293 @@ MARQUEE CSS CODE
   }
 
 
+  /*-----------------------------------------------------------------------------------------------------------------
+  FOOTER CSS CODE
+  -------------------------------------------------------------------------------------------------------------------- */
+
+  .footer {
+    color: white;
+    background-color:rgba(0, 0, 0, 0.850);
+    font-size: 14px;
+    padding: 40px 0;
+    position:relative;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    /* margin-top: 40PX; */
+}
+.footer .copyright p {
+    margin-bottom: 0;
+  }
+  
+  .footer .social-links {
+    margin-top: 20px;
+  }
+  
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    margin: 0 5px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .footer .credits {
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------
+CONTACT US THEME SECTION CSS CODE 
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+#contact-theme {
+    position: relative;
+    width: 100%;
+    height: auto; /* Full viewport height */
+    overflow: hidden;
+}
+
+#contact-theme .theme {
+    position: relative; /* To position the overlay relative to this container */
+}
+
+#contact-theme .theme img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image in the container */
+}
+
+/* Overlay styles */
+#contact-theme .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.971), rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.971)); /* Gradient from black to transparent and back to black */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    color: #fff; /* White text color */
+    font-size: 2rem; /* Text size */
+    text-align: center; /* Center the text */
+}
+
+#contact-theme .overlay h2 {
+    margin: 0; /* Remove default margin */
+}
+
+
+  /*-----------------------------------------------------------------------------------------------------------------------------------
+CONTACT us - GEO LOCATION CSS CODE 
+------------------------------------------------------------------------------------------------------------------------------------*/
+#map-section {
+    background-color: #f8f9fa;
+  }
+  
+  #map-section h2 {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .map-container iframe {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  /*-----------------------------------------------------------------------------------------------------------------------------------
+CONTACT us - form CSS CODE 
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.contact {
+    background: url("./image/contact-bg.png") no-repeat left center;
+    background-size: 50%;
+    padding: 60px 0;
+    position: relative;
+  }
+  
+  
+  .contact .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact .info-item i {
+    font-size: 24px;
+    color: #fff;
+    background-color: #0056b3;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 10px 15px;
+  }
+  
+  .contact .info-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+  }
+  
+  .contact .info-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
+
+
+  .contact .email-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .contact {
+      background-position: center;
+    }
+  }
+  
+  .email-form input::placeholder,
+.email-form textarea::placeholder {
+    color: #999; /* Change this to your desired color */
+}
 
 
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------
+ABOUT US THEME SECTION CSS CODE
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+#about-theme {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Set height to 50% of the viewport height */
+}
+
+#about-theme .theme-img {
+    position: relative; /* Positioning context for the overlay */
+    height: 100%; /* Ensures the theme-img div takes full height */
+}
+
+#about-theme .theme-img img {
+    margin-top: 60px;
+    width: 100%;
+    height: 100%; /* Ensures the image covers the height of the container */
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image in the container */
+}
+
+
+#about-theme .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center text vertically */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.971), rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.971)); /* Gradient from black to transparent and back to black */
+    z-index: 1; /* Ensures overlay is above the image */
+}
+
+
+.text-container {
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    color: #fff; /* White text color */
+}
+
+#about-theme .text-container h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: 700; /* Bold font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+.oswald-title {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+ul li::marker {
+    color: goldenrod; /* Change to your desired color */
+    font-size: 1.2em; /* Adjust size if needed */
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BLOG NEW NEWCARD CSS HERE
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.services .service-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    transition: all ease-in-out 0.4s;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+  }
+  
+  .services .service-item i {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    font-size: 28px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .services .service-item h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: var(--heading-color);
+    transition: 0.3s;
+  }
+  
+  .services .service-item h4 a {
+    text-decoration: none;
+  }
+  
+  .services .service-item p {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  .services .service-item:hover {
+    background-color: var(--accent-color);
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .services .service-item:hover i {
+    background: var(--surface-color);
+    color: var(--accent-color);
+  }
+  
+  .services .service-item:hover h4,
+  .services .service-item:hover p {
+    color: var(--contrast-color);
+  }
+  
